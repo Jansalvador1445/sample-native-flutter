@@ -1,0 +1,6 @@
+framework module Pods_route_nativeTests {
+  umbrella header "Pods-route-nativeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
