@@ -406,10 +406,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${SRCROOT}/./FlutterModules/.metadata",
+				"${SRCROOT}/FlutterModules/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/FlutterModules/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/FlutterModules/.ios/Flutter/flutter_export_environment.sh",
+			);
 			name = "[CP-User] Run Flutter Build demo_route Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../demo_route/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/FlutterModules/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
